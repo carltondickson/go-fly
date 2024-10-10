@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go Fly</title>
+</head>
+<body>
+<h1>Go Fly</h1>
+<p>Just testing deployments to fly.io</p>
+{{ if .Region }}
+<h2>I'm running in the {{.Region}} region</h2>
+{{ else }}
+<h2>No FLY_REGION set</h2>
+{{end}}
+</body>
+</html>
